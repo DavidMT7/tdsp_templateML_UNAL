@@ -2,57 +2,60 @@
 
 ## Nombre del Proyecto
 
-[Nombre del proyecto aquí]
+Asistente de apoyo a *threat hunting* basado en LLM y datos de CTI (RAG / ajuste fino en fases posteriores).
 
 ## Objetivo del Proyecto
 
-[Descripción breve del objetivo del proyecto y por qué es importante]
+Diseñar una solución alineada al **Team Data Science Process (TDSP)** que evolucione hacia un asistente conversacional para contextualizar amenazas (CVE, MITRE, KEV), apoyar lectura de hallazgos y priorización para el área de seguridad. La **Fase 1** cubre entendimiento del negocio, alcance y carga documentada de datos públicos de referencia (Hugging Face y Kaggle).
 
 ## Alcance del Proyecto
 
 ### Incluye:
 
-- [Descripción de los datos disponibles]
-- [Descripción de los resultados esperados]
-- [Criterios de éxito del proyecto]
+- Marco de proyecto, stakeholders y criterios de éxito (versión documental 1.0 al 4 de junio de 2026).
+- Ingesta de CTI público: `Shomi28/cyber-threat-intelligence` (HF) y `prayanshusinghgaur/cybersecurity-threat-intelligence` (Kaggle).
+- Diccionarios de datos completos y trazabilidad negocio ↔ variables (ver notebook de Fase 1).
+- Fases siguientes: preprocesamiento, EDA, modelado, despliegue y evaluación.
 
 ### Excluye:
 
-- [Descripción de lo que no está incluido en el proyecto]
+- Entrenamiento o despliegue en producción de un LLM en la Fase 1.
+- Ingesta de logs o datos internos reales del negocio (hasta definir gobierno y permisos).
+- Automatización completa de pipelines SOC/CI/CD.
 
 ## Metodología
 
-[Descripción breve de la metodología que se utilizará para llevar a cabo el proyecto]
+**TDSP:** Entendimiento del negocio → Adquisición y comprensión de datos → Modelado → Despliegue → Aceptación y visualización.
 
 ## Cronograma
 
-| Etapa | Duración Estimada | Fechas |
-|------|---------|-------|
-| Entendimiento del negocio y carga de datos | 2 semanas | del 1 de mayo al 15 de mayo |
-| Preprocesamiento, análisis exploratorio | 4 semanas | del 16 de mayo al 15 de junio |
-| Modelamiento y extracción de características | 4 semanas | del 16 de junio al 15 de julio |
-| Despliegue | 2 semanas | del 16 de julio al 31 de julio |
-| Evaluación y entrega final | 3 semanas | del 1 de agosto al 21 de agosto |
+| Etapa | Duración referencial | Fechas (2026) |
+|-------|---------------------|---------------|
+| Entendimiento del negocio y carga de datos | 1 semana | **7 mayo – 14 mayo** |
+| Preprocesamiento y EDA | 1 semana | *Plan tentativo: 14 mayo - 21 mayo* |
+| Modelamiento y extracción de características | 1 semana | *Plan tentativo: 21 mayo - 28 mayo* |
+| Despliegue / Evaluación y entrega final | 1 semana | *Plan tentativo: 28 mayo - 4 junio* |
 
-Hay que tener en cuenta que estas fechas son de ejemplo, estas deben ajustarse de acuerdo al proyecto.
+*Cohorte: 2026-II (mayo 2026). Fechas posteriores a la Fase 1 son preliminares.*
 
 ## Equipo del Proyecto
 
-- [Nombre y cargo del líder del proyecto]
-- [Nombre y cargo de los miembros del equipo]
+- **Líder y desarrollador:** David Martínez (proyecto individual).
 
 ## Presupuesto
 
-[Descripción del presupuesto asignado al proyecto]
+**COP $25.000.000** (referencial): cómputo en nube, APIs de modelos, almacenamiento CTI, pruebas e integración futura; parte del trabajo académico puede usar infraestructura gratuita o institucional.
 
 ## Stakeholders
 
-- [Nombre y cargo de los stakeholders del proyecto]
-- [Descripción de la relación con los stakeholders]
-- [Expectativas de los stakeholders]
+- **CISO / Director(a) de ciberseguridad:** priorización ejecutiva y trazabilidad CVE/MITRE/KEV.
+- **Líder del SOC:** síntesis de incidentes y triage asistido.
+- **Analista sénior de threat intelligence:** datos estructurados e informes homogéneos.
+- **GRC / auditoría interna:** evidencia y repetibilidad del análisis.
+- **Integrador tecnológico:** evaluación de copilotos de seguridad con datos públicos verificables.
 
 ## Aprobaciones
 
-- [Nombre y cargo del aprobador del proyecto]
-- [Firma del aprobador]
-- [Fecha de aprobación]
+- **Revisión documental hasta versión 1.0** (charter, diccionarios, notebook de Fase 1).
+- **Responsable:** David Martínez.
+- **Cierre v1.0 previsto:** 4 de junio de 2026. *Firma institucional según exija el curso o el empleador.*
